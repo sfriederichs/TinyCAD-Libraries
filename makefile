@@ -26,7 +26,6 @@ repo:
 	$(GIT) fetch $(USERNAME)
 	echo "Standard commit message" > commit
 
-<<<<<<< HEAD
 add:
 	$(GIT) add .
 pull:
