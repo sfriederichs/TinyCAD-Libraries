@@ -40,6 +40,7 @@ push: commit
 pull:
 	$(GIT) checkout $(BRANCH)
 	$(GIT) pull
-commit:
+commit: FORCE
 	$(GIT) commit -a -F $(COMMITFILE)
 
+FORCE:
