@@ -30,7 +30,7 @@ add:
 	$(GIT) add .
 pull:
 	$(GIT) checkout $(BRANCH)
-	$(GIT) pull
+	$(GIT) pull $(URL)
 commit:
 	$(GIT) commit -a -F $(COMMITFILE)
 	
