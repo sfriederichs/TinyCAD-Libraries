@@ -1,10 +1,19 @@
-Test
-Warranty Info:  None.  Because there isn't one.  I make no claims of accuracy or worthiness for a specific function or any of that.  It's probably all wrong.  Use it at your own risk.
+Warrany info:  There is none.  I mad these for my own purposes and thought that
+others might like them as well.  They may not be right.  They probably aren't.  
 
-License Info:  These are licensed under the same terms as the TinyCAD Libraries - see what that is at http://tinycad.sourceforge.net  No, I'm not sure what it is offhand.  No, this isn't my original work - there's some drawings from others in here.  If you are one such person and want your material removed just message me and we'll get it done.  If you want to sue me, please try talking to me first.  I'm quite helpful!
-
-To request new symbols use this link: https://sourceforge.net/tracker/?group_id=47763&atid=1119064 Click 'Add new' after logging in.
+License Info:  Check out http://tinycad.sourceforge.net and the licensing info
+for the libraries there.  It's the same. I did a fair bit of the artwork but 
+not all of it.  If you want something removed, contact me.  I have no desire to
+infringe on any copyrights you can lay claim to - just tryin to help a few 
+people out. 
 
 Background
 
-These are the libraries I've created for TinyCAD.  TinyCAD is an open-source schematic editor tool that can be found at http://tinycad.sourceforge.net  It's entirely open-source and free-as-in-beer unlinke some other popular schematic programs (*cough* *Eagle* *cough*).  I like to use it with FreePCB as do others, so I modified the libraries to include FreePCB footprints for specific parts.  Note I said specific parts.  If it has a Digikey part number included then it has a footprint.  Not that I say it's the right footprint - do like I do and check everything before you send the board off.  I'm going to try to upload some of the custom FreePCB footprints I use as well.  That is, if I can figure out Git...
+These are the libraries I've created for TinyCAD.  TinyCAD is an open-source 
+schematic editor tool that can be found here: http://tinycad.sourceforge.net 
+I prefer a TinyCAD/FreePCB combo for my schematic and PCB layout needs, so 
+these librares have parts with FreePCB footprints associated with them.  Some 
+footprints are not present in FreePCB - that's because I made them and haven't 
+had the time to add them to the Git repository yet!  I'm working on it.  
+Really.  I swear.  Ok not so much, but a little.  If I can just figure out how
+to use Git....
