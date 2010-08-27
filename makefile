@@ -35,13 +35,11 @@ commit:
 	$(GIT) commit -a -F $(COMMITFILE)
 	
 push: commit
-=======
+	$(GIT) push $(SSH_URL)
+	
 pull:
 	$(GIT) checkout $(BRANCH)
 	$(GIT) pull
 commit:
 	$(GIT) commit -a -F $(COMMITFILE)
-	
-push:
->>>>>>> 307dd7f6d32863e0abb0142d88f8e2b524ed1ac4
-	$(GIT) push $(SSH_URL)
+
