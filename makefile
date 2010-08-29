@@ -20,7 +20,7 @@ libs: update_pl
 update_pl:
 	wget $(PL_URL) -O $(PL_DIR)/$(PL_FILE)
 	
-repo:
+repo: 
 	$(GIT) init
 	$(GIT) remote add $(USERNAME) $(URL)
 	$(GIT) fetch $(USERNAME)
