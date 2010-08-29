@@ -1,11 +1,12 @@
+PROJECT_NAME = TinyCAD-Libraries
+REPO = $(PROJECT_NAME).git
 USERNAME = sfriederichs
-URL = git://github.com/sfriederichs/TinyCAD-Libraries.git
-REPOSITORY = TinyCAD-Libraries.git
-
+REPO_URL = git://github.com/$(USERNAME)/$(REPO)
+SSH_URL = git@github.com:$(USERNAME)/$(REPOSITORY)
 GIT = git
 BRANCH = master
 COMMITFILE = commit
-SSH_URL = git@github.com:$(USERNAME)/$(REPOSITORY)
+
 
 PL_URL = "http://spreadsheets.google.com/pub?key=t9k879BSXydtZdb6YKeC40g&output=csv"
 PYTHON_CMD = python
@@ -20,15 +21,15 @@ libs: update_pl
 update_pl:
 	wget $(PL_URL) -O $(PL_DIR)/$(PL_FILE)
 	
-repo: 
+repo:
 	$(GIT) init
-	$(GIT) remote add $(USERNAME) $(URL)
-	$(GIT) fetch $(USERNAME)
+	$(GIT) remote add $(USERNAME) $(REPO_URL)
+	$(GIT) pull $(REPO_URL)
 	echo "Standard commit message" > commit
 
 add:
 	$(GIT) add .
-
+	
 push: commit
 	$(GIT) push $(SSH_URL)
 	
@@ -36,7 +37,6 @@ pull:
 	$(GIT) checkout $(BRANCH)
 	$(GIT) pull
 commit: FORCE
-	notepad commit
-	$(GIT) commit -a -F $(COMMITFILE)
+	-$(GIT) commit -a -F $(COMMITFILE)
 
 FORCE:
