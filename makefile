@@ -1,6 +1,8 @@
+PROJECT_NAME = TinyCAD-Libraries
+REPO = $(PROJECT_NAME).git
 USERNAME = sfriederichs
-REPO_URL = git://github.com/sfriederichs/TinyCAD-Libraries.git
-REPOSITORY = TinyCAD-Libraries.git
+REPO_URL = git://github.com/$(USERNAME)/$(REPO)
+
 
 GIT = git
 BRANCH = master
@@ -22,7 +24,7 @@ update_pl:
 	
 repo:
 	$(GIT) init
-	$(GIT) remote add $(USERNAME) $(REPO_URL)
+	$(GIT) remote add $(PROJECT_NAME) $(REPO_URL)
 	$(GIT) pull $(REPO_URL)
 	echo "Standard commit message" > commit
 
