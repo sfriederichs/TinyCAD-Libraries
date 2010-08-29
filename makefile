@@ -6,7 +6,7 @@ REPO_URL = git://github.com/$(USERNAME)/$(REPO)
 GIT = git
 BRANCH = master
 COMMITFILE = commit
-SSH_URL = git@github.com:$(USERNAME)/$(REPOSITORY)
+SSH_URL = git@github.com:$(USERNAME)/$(REPO)
 
 PL_URL = "http://spreadsheets.google.com/pub?key=t9k879BSXydtZdb6YKeC40g&output=csv"
 PYTHON_CMD = python
