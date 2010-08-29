@@ -36,6 +36,6 @@ pull:
 	$(GIT) checkout $(BRANCH)
 	$(GIT) pull
 commit: FORCE
-	$(GIT) commit -a -F $(COMMITFILE)
+	-$(GIT) commit -a -F $(COMMITFILE)
 
 FORCE:
