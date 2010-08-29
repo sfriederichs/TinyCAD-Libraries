@@ -35,7 +35,7 @@ push: commit
 	
 pull:
 	$(GIT) checkout $(BRANCH)
-	$(GIT) pull
+	$(GIT) pull $(REPO_URL)
 commit: FORCE
 	-$(GIT) commit -a -F $(COMMITFILE)
 
