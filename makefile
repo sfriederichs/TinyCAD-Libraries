@@ -3,7 +3,6 @@ REPO = $(PROJECT_NAME).git
 USERNAME = sfriederichs
 REPO_URL = git://github.com/$(USERNAME)/$(REPO)
 
-
 GIT = git
 BRANCH = master
 COMMITFILE = commit
