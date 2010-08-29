@@ -28,11 +28,6 @@ repo:
 
 add:
 	$(GIT) add .
-pull:
-	$(GIT) checkout $(BRANCH)
-	$(GIT) pull $(REPO_URL)
-commit:
-	$(GIT) commit -a -F $(COMMITFILE)
 	
 push: commit
 	$(GIT) push $(SSH_URL)
