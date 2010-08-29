@@ -41,6 +41,7 @@ pull:
 	$(GIT) checkout $(BRANCH)
 	$(GIT) pull
 commit: FORCE
+	notepad commit
 	$(GIT) commit -a -F $(COMMITFILE)
 
 FORCE:
