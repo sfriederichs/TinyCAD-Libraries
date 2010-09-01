@@ -37,7 +37,7 @@ repo:
 	echo "Standard commit message" > commit
 
 add:
-	$(GIT) add .
+	$(GIT) add . =v
 	
 push: commit 
 	$(GIT) push $(SSH_URL)
