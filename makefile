@@ -21,7 +21,7 @@ add_libs:
 	git add ./Libraries/TCLib/*
 	
 clean_incoming: FORCE
-	rm -r ./Incoming/*
+	-rm -r ./Incoming/*
 
 libs: update_pl
 	$(PYTHON_CMD) $(TCLIB_SCRIPT)
