@@ -327,7 +327,7 @@ def main(argv=None):
                 #ShowName - long
                 #ShowRef - long
                 
-                sqlQuery = "INSERT INTO Name VALUES (" + str(NameID) + ",'" + row[part_desc['Name']] + "'," + str(SymbolID) + ",0,'" + row[part_desc['Ref']] + "'," + row[part_desc['PPP']] + ",'" + row[part_desc['Description']] + "',0,1,0)"
+                sqlQuery = "INSERT INTO Name VALUES (" + str(NameID) + ",'" + row[part_desc['Name']] + "'," + str(SymbolID) + ",0,'" + row[part_desc['Ref']] + "'," + row[part_desc['PPP']] + ",'" + row[part_desc['Description']] + "',0,0,0)"
                 #print sqlQuery
                 
                 try:

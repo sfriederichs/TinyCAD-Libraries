@@ -298,6 +298,7 @@ part,AVR_ISP_6,1,H?,AVR_ISP_6,3X2HDR-100
 part,TP,1,TP?,TP,TP-2S-L,Through-hole low-profile compact test point,,,,,,,,,,,,,,,Keystone Inc,5006,5006K-ND,,,,0.32
 part,TP_HP,1,TP?,TP,TP-2S-L,Through-hole high-profile multipurpose test point,,,,,,,,,,,,,,,Keystone Inc,5011,5011K-ND,,,,0.32
 part,JUMPER,1,H?,HDR_2_1,1X2HDR-100,Single-position through-hole jumper
+part,1x1_HDR,1,H?,HDR_1,1X1HDR-100,1x1 .1 in pitch through-hole header (male or female)
 part,2x1_HDR,1,H?,HDR_2_1,1X2HDR-100,2x1 .1 in pitch through-hole header (male or female)
 part,3x1_HDR,1,H?,HDR_3_1,3SIP100,3x1 .1 in pitch through-hole header (male or female)
 part,4x1_HDR,1,H?,HDR_4_1,4SIP100,4x1 .1 in pitch through-hole header (male or female)
@@ -313,7 +314,7 @@ part,1x2_HDR,1,H?,,1X2HDR-100,1x2 .1 in pitch through-hole header (male or femal
 part,2x2_HDR,1,H?,,2X2HDR-100,2x2 .1 in pitch through-hole header (male or female)
 part,3x2_HDR,1,H?,,3X2HDR-100,3x2 .1 in pitch through-hole header (male or female)
 part,4x2_HDR,1,H?,,4X2HDR-100,4x2 .1 in pitch through-hole header (male or female)
-part,5x2_HDR,1,H?,,5X2HDR-100,5x2 .1 in pitch through-hole header (male or female)
+part,5x2_HDR,1,H?,HDR_5_2,5X2HDR-100,5x2 .1 in pitch through-hole header (male or female)
 part,6x2_HDR,1,H?,,6X2HDR-100,6x2 .1 in pitch through-hole header (male or female)
 part,7x2_HDR,1,H?,,7X2HDR-100,7x2 .1 in pitch through-hole header (male or female)
 part,8x2_HDR,1,H?,,8X2HDR-100,8x2 .1 in pitch through-hole header (male or female)
@@ -401,6 +402,39 @@ library,sm_Semiconductor
 header,Name,PPP,Ref,Symbol,Package,Description,,Usage,Datasheet,Picture,,Color,V_Fw,I_Fw,I_Max,,,,,,Manufacturer,Manufacturer Part,Digi-Key Part,Newark Part,Mouser Part,,Cost
 part,LED_Red_0603,1,D?,LED,0603,Red SMD LED 0603,,DIO LED,,,,Red,1.8V,2mA,25mA,,,,,,Osram Opto Semiconductor,LS L29K-G1J2-1-0-2-R18-Z,475-2506-1-ND,,,,0.15
 part,LED_Green_0603,1,D?,LED,0603,Green SMD LED 0603,,Power LED,,,,Green,1.7V,2mA,25mA,,,,,,Osram Opto Semiconductor,LG L29K-G2J1-24-Z,475-2709-1-ND,,,,0.16
+
+library,gen_uC_Picaxe
+header,Name,PPP,Ref,Symbol,Package,Description,,Usage,Datasheet,Picture
+part,PICAXE-08,1,U?,PICAXE-08
+part,PICAXE-08M,1,U?,PICAXE-08M
+part,PICAXE-14M,1,U?,PICAXE-14M
+part,PICAXE-18,1,U?,PICAXE-18
+part,PICAXE-18A,1,U?,PICAXE-18A
+part,PICAXE-28A,1,U?,PICAXE-28A
+part,PICAXE-28X,1,U?,PICAXE-28X
+part,PICAXE-28X1,1,U?,PICAXE-28X1
+part,PICAXE-28X2,1,U?,PICAXE-28X2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 end
 
 gen_IC
