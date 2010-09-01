@@ -17,6 +17,12 @@ PL_FILE = parts_list.csv
 MDB_SCRIPT = ./Script/plgen_mdb.py
 TCLIB_SCRIPT = ./Script/plgen_tclib.py
 
+add_libs:
+	git add ./Libraries/TCLib/*
+	
+clean_incoming: FORCE
+	rm -r ./Incoming/*
+
 libs: update_pl
 	$(PYTHON_CMD) $(TCLIB_SCRIPT)
 
@@ -33,13 +39,14 @@ repo:
 add:
 	$(GIT) add .
 	
-push: commit
+push: commit 
 	$(GIT) push $(SSH_URL)
 	
 pull:
 	$(GIT) checkout $(BRANCH)
 	$(GIT) pull $(REPO_URL)
-commit: FORCE
+	
+commit: clean_incoming add_libs FORCE
 	-$(GIT) commit -a -F $(COMMITFILE)
 
 FORCE:
