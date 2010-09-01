@@ -47,6 +47,7 @@ pull:
 	$(GIT) pull $(REPO_URL)
 	
 commit: clean_incoming add_libs FORCE
+	notepad commit
 	-$(GIT) commit -a -F $(COMMITFILE)
 
 FORCE:
