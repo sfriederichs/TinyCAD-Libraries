@@ -139,7 +139,7 @@ part,SWITCH_SELECT_4,1,SW?,SW_SP4T,,Four position select switch
 part,SWITCH_SELECT_5,1,SW?,SW_SP5T,,Five position select switch
 part,SWITCH_SELECT_6,1,SW?,SW_SP6T,,Six position select switch
 part,SWITCH_SELECT_12,1,SW?,SW_SP12T,,Twelve position select switch
-
+part,SWITCH_DIP_8,1,SW?,SW_DIP_8,,8 Position DIP Switch
 
 library,gen_Mechanical
 
