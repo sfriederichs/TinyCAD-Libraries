@@ -1,0 +1,4 @@
+header,Name,PPP,Symbol,Package,Description,,Color,Forward Voltage,Manufacturer,Manufacturer Part Number,Digi-Key Part Number,Min Quantity,Price per min
+part,LED_RED_1206,1,LED,LED_1206,LED RED CLEAR 1206 SMD,,Red,1.7V,CHICAGO MINIATURE LIGHTING LLC,CMD11-21SRC/TR8,L62011CT-ND,1,0.39000
+header,Name,PPP,Symbol,Package,Description,,Inductance,Tolerance,Current,Manufacturer,Manufacturer Part Number,Digi-Key Part Number,Min Quantity,Price per min
+part,L_.1uH,1,L,CK05,CHOKE RF CONFORMAL COATED .10UH,,100nH,20%,1.2A,JW Miller A Bourns Company,78FR10M-RC,M10147-ND,1,0.30000
