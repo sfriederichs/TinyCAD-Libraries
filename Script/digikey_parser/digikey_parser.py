@@ -29,16 +29,17 @@
 Argument_list = { 'Markup':0,
                   'DKey_Part':1,
                   'Name':2,
-                  'Symbol':3,
-                  'Package':4,
-                  'Library':5}
+                  'Ref':3,
+                  'Symbol':4,
+                  'Package':5,
+                  'Library':6}
 
 import sys,csv
 from urllib import urlopen
 from sgmllib import SGMLParser
 
 CSV_file_path = '.\parts_list.csv'
-Incoming_list_path = '..\Incoming\incoming.txt'
+Incoming_list_path = '..\..\Incoming\incoming.txt'
 
 #This is the data read from the web page
 #headers = ['Digi-Key Part Number',
@@ -223,7 +224,14 @@ def main(argv=None):
             elif cell == 'PPP':
                 CSV_header = CSV_header+',PPP'
                 CSV_row = CSV_row + ',1'
-                
+
+            elif cell == 'Ref':
+                CSV_header = CSV_header + ',Ref'
+                try:
+                    CSV_row = CSV_row + ',' + row[Argument_list['Ref']]
+                except IndexError,msg:
+                    print "Error, no ref name supplied"
+                    raise
             elif cell == 'Symbol':
                 CSV_header = CSV_header + ',Symbol'
                 try:
@@ -319,7 +327,7 @@ def main(argv=None):
                         library_found = False
                         #insert header and part because we haven't found the right header
                         #then append
-                    elif row[Argument_list['Library']]+'\n' in CSV_library_row:
+                    elif ','+row[Argument_list['Library']] in CSV_library_row:
                         print "Found desired library " + row[Argument_list['Library']]
                         library_found = True
                 except IndexError,msg:
