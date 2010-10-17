@@ -1,6 +1,6 @@
 ,Required,Required,Required,Required,Required,Required,Required blank column,Fields,,,,,,,,,,,,,,,,,,,
 Markup,Part/Library name,Parts Per Package,Reference Designator,TinyCAD Symbol,FreePCB Package,Description,,,,,,,,,,,,,,,,,,,,,
-library,gen_passive,,,,,,,,,,,,,,,,,,,,,,,,,,
+library,gen_Passives,,,,,,,,,,,,,,,,,,,,,,,,,,
 header,Name,PPP,Ref,Symbol,Package,Description,,Value,Tol.,P_Max,,,,,,,,,,,Manufacturer,Manufacturer Part,Digi-Key Part,Newark Part,Mouser Part,,Cost
 part,R,1,R?,R,,Resistor,,,,,,,,,,,,,,,,,,,,,
 header,Name,PPP,Ref,Symbol,Package,Description,,Value,Tol.,I_Max,ESR,,,,,,,,,,Manufacturer,Manufacturer Part,Digi-Key Part,Newark Part,Mouser Part,,Cost
@@ -36,7 +36,14 @@ part,BUZZER,1,BUZ?,BUZZER,,Buzzer,,,,,,,,,,,,,,,,,,,,,
 header,Name,PPP,Ref,Symbol,Package,Description,,V_Max,I_Max,Color,,,,,,,,,,,Manufacturer,Manufacturer Part,Digi-Key Part,Newark Part,Mouser Part,,Cost
 part,LAMP,1,LAMP?,LAMP,,Lamp,,,,,,,,,,,,,,,,,,,,,
 
-library,gen_semiconductor,,,,,,,,,,,,,,,,,,,,,,,,,,
+,gen_Ics,,,,,,,,,,,,,,,,,,,,,,,,,,
+,OP_AMP,,,,,,,,,,,,,,,,,,,,,,,,,,
+,COMPARATOR,,,,,,,,,,,,,,,,,,,,,,,,,,
+,VREG_3_TERM,,,,,,,,,,,,,,,,,,,,,,,,,,
+,VREG_3_TERM_ADJ,,,,,,,,,,,,,,,,,,,,,,,,,,
+,TIMER_555,,,,,,,,,,,,,,,,,,,,,,,,,,
+
+library,gen_Semiconductors,,,,,,,,,,,,,,,,,,,,,,,,,,
 header,Name,PPP,Ref,Symbol,Package,Description,,Pmax,IcMax,VceMax,Hfe,VceSat,VbeSat,HfeSat,,,,,,,Manufacturer,Manufacturer Part,Digi-Key Part,Newark Part,Mouser Part,,Cost
 part,PNP,1,Q?,PNP,,PNP Transistor,,,,,,,,,,,,,,,,,,,,,
 part,NPN,1,Q?,NPN,,NPN Transistor,,,,,,,,,,,,,,,,,,,,,
@@ -96,14 +103,38 @@ part,DC_POWER_MF,1,B?,DC_POWER_CABLE_MF,,2.1 x 5.5 power cable - 3ft Male-Female
 
 library,gen_Logic,,,,,,,,,,,,,,,,,,,,,,,,,,
 header,Name,PPP,Ref,Symbol,Package,Description,,VOH,VOL,IOH,IOL,,,,,,,,,,Manufacturer,Manufacturer Part,Digi-Key Part,Newark Part,Mouser Part,,Cost
-part,AND,1,Q?,AND,,Two-input AND Gate,,,,,,,,,,,,,,,,,,,,,
-part,NAND,1,Q?,NAND,,Two-Input NAND Gate,,,,,,,,,,,,,,,,,,,,,
-part,OR,1,Q?,OR,,Two-Input OR Gate,,,,,,,,,,,,,,,,,,,,,
-part,NOR,1,Q?,NOR,,Two-Input NOR Gate,,,,,,,,,,,,,,,,,,,,,
-part,XOR,1,Q?,XOR,,Two-Input XOR Gate,,,,,,,,,,,,,,,,,,,,,
-part,XNOR,1,Q?,XNOR,,Two-Input XNOR Gate,,,,,,,,,,,,,,,,,,,,,
+part,AND_2,1,Q?,AND,,Two-input AND Gate,,,,,,,,,,,,,,,,,,,,,
+part,NAND_2,1,Q?,NAND,,Two-Input NAND Gate,,,,,,,,,,,,,,,,,,,,,
+part,OR_2,1,Q?,OR,,Two-Input OR Gate,,,,,,,,,,,,,,,,,,,,,
+part,NOR_2,1,Q?,NOR,,Two-Input NOR Gate,,,,,,,,,,,,,,,,,,,,,
+part,XOR_2,1,Q?,XOR,,Two-Input XOR Gate,,,,,,,,,,,,,,,,,,,,,
+part,XNOR_2,1,Q?,XNOR,,Two-Input XNOR Gate,,,,,,,,,,,,,,,,,,,,,
 part,BUFFER,1,Q?,BUFFER,,Buffer,,,,,,,,,,,,,,,,,,,,,
-part,NOT,1,Q?,NOT,,Inverter,,,,,,,,,,,,,,,,,,,,,
+part,NOT,1,Q?,NOT,,Inverter
+,AND_3,,,,,
+,AND_4,,,,,
+,AND_8,,,,,
+,NAND_3,,,,,
+,NAND_3,,,,,
+,NAND_8,,,,,
+,OR_3,,,,,
+,OR_4,,,,,
+,OR_8,,,,,
+,NOR_3,,,,,
+,NOR_4,,,,,
+,NOR_8,,,,,
+,XNOR_2,,,,,
+,DELAY,,,,,
+,LATCH_SR,,,,,
+,LATCH_JK,,,,,,,,,,,,,,,,,,,,,,,,,,
+,FF_D,,,,,,,,,,,,,,,,,,,,,,,,,,
+,FF_D_EN,,,,,,,,,,,,,,,,,,,,,,,,,,
+,FF_D_CLR_ASYNC,,,,,,,,,,,,,,,,,,,,,,,,,,
+,FF_D_CLR_SYNC,,,D Flip-flop with asynchronous clear,,,,,,,,,,,,,,,,,,,,,,,
+,FF_D_PS,,,D Flip-flop with synchronous clear,,,,,,,,,,,,,,,,,,,,,,,
+,DEC_3_8,,,D Flip-flop with preset,,,,,,,,,,,,,,,,,,,,,,,
+,DEC_2_4,,,3-to-8 line decoder,,,,,,,,,,,,,,,,,,,,,,,
+,DEC_1_2,,,2-to-4 line decoder,,,,,,,,,,,,,,,,,,,,,,,
 
 library,gen_Electromechanical,,,,,,,,,,,,,,,,,,,,,,,,,,
 header,Name,PPP,Ref,Symbol,Package,Description,,V_Max,I_Max,R_Max,V_Max_AC,I_Max_AC,,,,,,,,,Manufacturer,Manufacturer Part,Digi-Key Part,Newark Part,Mouser Part,,Cost
@@ -122,26 +153,26 @@ part,RELAY_DPST_NO,1,REL?,RELAY_DPST_NO,,,,,,,,,,,,,,,,,,,,,,,
 part,RELAY_DPST_NC,1,REL?,RELAY_DPST_NC,,,,,,,,,,,,,,,,,,,,,,,
 part,RELAY_DPST_OPP,1,REL?,RELAY_DPST_OPP,,,,,,,,,,,,,,,,,,,,,,,
 
-library,gen_Electromechanical_switches,,,,,,,,,,,,,,,,,,,,,,,,,,
+library,gen_Electromechanical_Switches,,,,,,,,,,,,,,,,,,,,,,,,,,
 header,Name,PPP,Ref,Symbol,Package,Description,,V_Max,I_Max,R_Max,V_Max_AC,I_Max_AC,,,,,,,,,Manufacturer,Manufacturer Part,Digi-Key Part,Newark Part,Mouser Part,,Cost
 part,MOM_SPST_NC,1,SW?,SW_MOM_SPST_NC,,Normally closed SPST momentary pushbutton,,,,,,,,,,,,,,,,,,,,,
 part,MOM_SPST_NO,1,SW?,SW_MOM_SPST_NO,,Normally open SPST momentary pushbutton,,,,,,,,,,,,,,,,,,,,,
-part,MOM_DPST_NO,1,SW?,SW_MOM_DPST_NO,,Normally open two-pole on/off momentary switches
-part,MOM_DPST_NC,1,SW?,SW_MOM_DPST_NC,,Normally-closed two-pole on/off momentary switches
-part,MOM_DPST_OPP,1,SW?,SW_MOM_DPST_OPP,,Two-pole opposed on/off momentary switches
-part,MOM_SPDT,1,SW?,SW_MOM_SPDT,,Momentary SPDT pushbutton
-part,SWITCH_SPST,1,SW?,SW_SPST,,Single pole normally closed on/off switch
-part,SWITCH_SPDT,1,SW?,SW_SPDT,,Selector switch/double throw switch
-part,SWITCH_DPST,1,SW?,SW_DPST,,Two-pole normally-open on/off switches
-part,SWITCH_DPST_OPP,1,SW?,SW_DPST_OPP,,Two-pole opposed on/off switches (one NO one NC)
-part,SWITCH_SELECT_3,1,SW?,SW_SP3T,,Three position select switch
-part,SWITCH_SELECT_4,1,SW?,SW_SP4T,,Four position select switch
-part,SWITCH_SELECT_5,1,SW?,SW_SP5T,,Five position select switch
-part,SWITCH_SELECT_6,1,SW?,SW_SP6T,,Six position select switch
-part,SWITCH_SELECT_12,1,SW?,SW_SP12T,,Twelve position select switch
-part,SWITCH_DIP_8,1,SW?,SW_DIP_8,,8 Position DIP Switch
+part,MOM_DPST_NO,1,SW?,SW_MOM_DPST_NO,,Normally open two-pole on/off momentary switches,,,,,,,,,,,,,,,,,,,,,
+part,MOM_DPST_NC,1,SW?,SW_MOM_DPST_NC,,Normally-closed two-pole on/off momentary switches,,,,,,,,,,,,,,,,,,,,,
+part,MOM_DPST_OPP,1,SW?,SW_MOM_DPST_OPP,,Two-pole opposed on/off momentary switches,,,,,,,,,,,,,,,,,,,,,
+part,MOM_SPDT,1,SW?,SW_MOM_SPDT,,Momentary SPDT pushbutton,,,,,,,,,,,,,,,,,,,,,
+part,SWITCH_SPST,1,SW?,SW_SPST,,Single pole normally closed on/off switch,,,,,,,,,,,,,,,,,,,,,
+part,SWITCH_SPDT,1,SW?,SW_SPDT,,Selector switch/double throw switch,,,,,,,,,,,,,,,,,,,,,
+part,SWITCH_DPST,1,SW?,SW_DPST,,Two-pole normally-open on/off switches,,,,,,,,,,,,,,,,,,,,,
+part,SWITCH_DPST_OPP,1,SW?,SW_DPST_OPP,,Two-pole opposed on/off switches (one NO one NC),,,,,,,,,,,,,,,,,,,,,
+part,SWITCH_SELECT_3,1,SW?,SW_SP3T,,Three position select switch,,,,,,,,,,,,,,,,,,,,,
+part,SWITCH_SELECT_4,1,SW?,SW_SP4T,,Four position select switch,,,,,,,,,,,,,,,,,,,,,
+part,SWITCH_SELECT_5,1,SW?,SW_SP5T,,Five position select switch,,,,,,,,,,,,,,,,,,,,,
+part,SWITCH_SELECT_6,1,SW?,SW_SP6T,,Six position select switch,,,,,,,,,,,,,,,,,,,,,
+part,SWITCH_SELECT_12,1,SW?,SW_SP12T,,Twelve position select switch,,,,,,,,,,,,,,,,,,,,,
+part,SWITCH_DIP_8,1,SW?,SW_DIP_8,,8 Position DIP Switch,,,,,,,,,,,,,,,,,,,,,
 
-library,th_Passive,,,,,
+library,th_Passives,,,,,,,,,,,,,,,,,,,,,,,,,,
 header,Name,PPP,Ref,Symbol,Package,Description,,Usage,Datasheet,Picture,R_Max,R_Min,Progression,V_Max,I_Max,,,,,,Manufacturer,Manufacturer Part,Digi-Key Part,Newark Part,Mouser Part,,Cost
 part,10K_POT,1,R?,POT,SIPPOT,10K Variable Resistor  3 terminal,,Misc,,,10K,0,Linear,,,,,,,,,,516-1308-ND,,,,0.35
 part,POT,1,R?,POT,,Variable resistor  3 terminal,,,,,,,Logarithmic,,,,,,,,,,,,,,
@@ -230,7 +261,7 @@ library,th_IC_OpAmps,,,,,,,,,,,,,,,,,,,,,,,,,,
 header,Name,PPP,Ref,Symbol,Package,Description,,Usage,Datasheet,,,,,,,,,,,,Manufacturer,Manufacturer Part,Digi-Key Part,Newark Part,Mouser Part,,Cost
 part,LM324,1,U?,LM324,14DIP300,Uni/Bipolar  Op-Amp,,,,,,,,,,,,,,,Fairchild Semiconductor,LM324N,LM324NFS-ND,,,,0.4
 
-library,th_uC,,,,,,,,,,,,,,,,,,,,,,,,,,
+library,th_uCs,,,,,,,,,,,,,,,,,,,,,,,,,,
 header,Name,PPP,Ref,Symbol,Package,Description,,Usage,Datasheet,,,,,,,,,,,,Manufacturer,Manufacturer Part,Digi-Key Part,Newark Part,Mouser Part,,Cost
 part,ATTiny2313,1,U?,ATTiny2313,20DIP300,AVR MCU 4K 20MHz,,,,,,,,,,,,,,,Atmel,ATTINY2313-20PU,ATTINY2313-20PU-ND,,,,2.26
 part,ATTiny45,1,U?,ATTINYX5_DIP_SOIC,8DIP300,AVR MCU 2K,,,,,,,,,,,,,,,Atmel,ATTINY45-20PU,ATTINY45-20PU-ND,,,,2.13
@@ -302,7 +333,7 @@ part,5x1_HDR,1,H?,HDR_5_1,5SIP100,5x1 .1 in pitch through-hole header (male or f
 part,6x1_HDR,1,H?,HDR_6_1,6SIP100,6x1 .1 in pitch through-hole header (male or female),,,,,,,,,,,,,,,Molex,90120-0126,WM8076-ND,,,,0.62
 part,7x1_HDR,1,H?,HDR_7_1,7SIP100,7x1 .1 in pitch through-hole header (male or female),,,,,,,,,,,,,,,,,,,,,
 part,8x1_HDR,1,H?,HDR_8_1,8SIP100,8x1 .1 in pitch through-hole header (male or female),,,,,,,,,,,,,,,Molex,90120-0128,WM8078-ND,,,,0.82
-part,9x1_HDR,1,H?,HDR_9_1,9SIP100,9x1 .1 in pitch through-hole header (male or female)
+part,9x1_HDR,1,H?,HDR_9_1,9SIP100,9x1 .1 in pitch through-hole header (male or female),,,,,,,,,,,,,,,,,,,,,
 part,10x1_HDR,1,H?,HDR_10_1,10SIP100,10x1 .1 in pitch through-hole header (male or female)
 part,22x1_HDR,1,H?,,22SIP100,22x1 .1 in pitch through-hole header (male or female)
 part,24x1_HDR,1,H?,,24SIP100,22x1 .1 in pitch header through-hole (male or female)
@@ -319,21 +350,21 @@ part,10x2_HDR,1,H?,,10X2HDR-100,10x2 .1 in pitch through-hole header (male or fe
 part,11x2_HDR,1,H?,,11X2HDR-100,11x2 .1 in pitch through-hole header (male or female)
 part,12x2_HDR,1,H?,,12X2HDR-100,12x2 .1 in pitch through-hole header (male or female)
 part,13x2_HDR,1,H?,,13X2HDR-100,13x2 .1 in pitch through-hole header (male or female)
-part,14x2_HDR,1,H?,,14X2HDR-100,14x2 .1 in pitch through-hole header (male or female)
-part,15x2_HDR,1,H?,,15X2HDR-100,15x2 .1 in pitch through-hole header (male or female)
-part,16x2_HDR,1,H?,,16X2HDR-100,16x2 .1 in pitch through-hole header (male or female)
-part,17x2_HDR,1,H?,,17X2HDR-100,17x2 .1 in pitch through-hole header (male or female)
-part,18x2_HDR,1,H?,,18X2HDR-100,18x2 .1 in pitch through-hole header (male or female)
-part,19x2_HDR,1,H?,,19X2HDR-100,19x2 .1 in pitch through-hole header (male or female)
-part,20x2_HDR,1,H?,,20X2HDR-100,20x2 .1 in pitch through-hole header (male or female)
-part,21x2_HDR,1,H?,,21X2HDR-100,21x2 .1 in pitch through-hole header (male or female)
-part,22x2_HDR,1,H?,,22X2HDR-100,22x2 .1 in pitch through-hole header (male or female)
-part,23x2_HDR,1,H?,,23X2HDR-100,23x2 .1 in pitch through-hole header (male or female)
-part,24x2_HDR,1,H?,,24X2HDR-100,24x2 .1 in pitch through-hole header (male or female)
-part,25x2_HDR,1,H?,,25X2HDR-100,25x2 .1 in pitch through-hole header (male or female)
+part,14x2_HDR,1,H?,,14X2HDR-100,14x2 .1 in pitch through-hole header (male or female),,,,,,,,,,,,,,,,,,,,,
+part,15x2_HDR,1,H?,,15X2HDR-100,15x2 .1 in pitch through-hole header (male or female),,,,,,,,,,,,,,,,,,,,,
+part,16x2_HDR,1,H?,,16X2HDR-100,16x2 .1 in pitch through-hole header (male or female),,,,,,,,,,,,,,,,,,,,,
+part,17x2_HDR,1,H?,,17X2HDR-100,17x2 .1 in pitch through-hole header (male or female),,,,,,,,,,,,,,,,,,,,,
+part,18x2_HDR,1,H?,,18X2HDR-100,18x2 .1 in pitch through-hole header (male or female),,,,,,,,,,,,,,,,,,,,,
+part,19x2_HDR,1,H?,,19X2HDR-100,19x2 .1 in pitch through-hole header (male or female),,,,,,,,,,,,,,,,,,,,,
+part,20x2_HDR,1,H?,,20X2HDR-100,20x2 .1 in pitch through-hole header (male or female),,,,,,,,,,,,,,,,,,,,,
+part,21x2_HDR,1,H?,,21X2HDR-100,21x2 .1 in pitch through-hole header (male or female),,,,,,,,,,,,,,,,,,,,,
+part,22x2_HDR,1,H?,,22X2HDR-100,22x2 .1 in pitch through-hole header (male or female),,,,,,,,,,,,,,,,,,,,,
+part,23x2_HDR,1,H?,,23X2HDR-100,23x2 .1 in pitch through-hole header (male or female),,,,,,,,,,,,,,,,,,,,,
+part,24x2_HDR,1,H?,,24X2HDR-100,24x2 .1 in pitch through-hole header (male or female),,,,,,,,,,,,,,,,,,,,,
+part,25x2_HDR,1,H?,,25X2HDR-100,25x2 .1 in pitch through-hole header (male or female),,,,,,,,,,,,,,,,,,,,,
 
 
-library,Mechanical,,,,,
+library,Mechanical,,,,,,,,,,,,,,,,,,,,,,,,,,
 header,Name,PPP,Ref,Symbol,Package,Description,,Usage,Datasheet,Picture,Length,Width,Height,Material,Color,,,,,,Manufacturer,Manufacturer Part,Digi-Key Part,Newark Part,Mouser Part,,Cost
 part,PROJECT_BOX_8_6_3,1,MECH?,ENCLOSURE,,"8""x6""x3"" Project Box",,,,,,,,,,,,,,,Radio Shack,270-1809,,,,,6.99
 part,ENCLOSURE,1,MECH?,ENCLOSURE,,Custom or generic enclosure,,,,,,,,,,,,,,,,,,,,,
@@ -379,6 +410,9 @@ part,HDR_50_MALE_BREAKAWAY,1,H?,BREAKAWAY_HDR,,,,,,,,,,,Black,,,,,,Sullivan Conn
 header,Name,PPP,Ref,Symbol,Package,Description,,Usage,Datasheet,Picture,,,,,,,,,,,,,,,,,
 part,PIN_MALE,1,PIN?,PIN_MALE,,Male pin for cablemount housing,,,,,,,,,,,,,,,,,,,,,
 ,PIN_FEMALE,1,PIN?,PIN_FEMALE,,Female socket for cablemount housing,,,,,,,,,,,,,,,,,,,,,
+,SCREW,,,,,,,,,,,,,,,,,,,,,,,,,,
+,NUT,,,,,,,,,,,,,,,,,,,,,,,,,,
+,WASHER,,,,,,,,,,,,,,,,,,,,,,,,,,
 
 
 library,Assemblies,,,,,,,,,,,,,,,,,,,,,,,,,,
@@ -387,29 +421,29 @@ part,Arduino Mega,1,U?,ARDUINO_MEGA,ARDUINO_MEGA,A uC development board based on
 part,Arduino MegaShield Kit,1,U?,PCB,,A shield for the Arduino mega that has prototyping space,,,,,,,,,,,,,,,Sparkfun,DEV-09346,,,,DEV-09346,17.95
 
 
-library,sm_Passive,,,,,,,,,,,,,,,,,,,,,,,,,,
+library,sm_Passives,,,,,,,,,,,,,,,,,,,,,,,,,,
 header,Name,PPP,Ref,Symbol,Package,Description,,Usage,Datasheet,Picture,,Value,Tolerance,P_Max,,,,,,,Manufacturer,Manufacturer Part,Digi-Key Part,Newark Part,Mouser Part,,Cost
 part,R_10K_0603,1,R?,R,603,10K 0603 SMD 5% 1/4W Thick Film resistor,,Test Point Isolation,,,,10K,5%,0.25,,,,,,,Vishay/Dale,CRCW060310K0JNEAHP,541-10KSACT-ND,,,,0.118
 part,R_1K6_0603,1,R?,R,1206,1.6K 1206 SMD 5% 1/4W Thick Film resistor,,2ma LEDs,,,,1.6K,5%,0.25,,,,,,,Panasonic/ECG,ERJ-8GEYJ162V,P1.6KECT-ND,,,,0.029
 header,Name,PPP,Ref,Symbol,Package,Description,,Usage,Datasheet,Picture,,I_Hold,I_Trip,T_Trip,V_Max,,,,,,Manufacturer,Manufacturer Part,Digi-Key Part,Newark Part,Mouser Part,,Cost
 part,PTC_1.5A,1,R?,PTC,1206,1.5A Hold/3A trip 1206 SMD 6V PTC,,Power supply protection,,,,1.5A,3A,0.3s,6V,,,,,,Tyco Electronics,NANOSMDC150F-2,NANOSMDC150FCT-ND,,,,0.44
 
-library,sm_Semiconductor,,,,,,,,,,,,,,,,,,,,,,,,,,
+library,sm_Semiconductors,,,,,,,,,,,,,,,,,,,,,,,,,,
 header,Name,PPP,Ref,Symbol,Package,Description,,Usage,Datasheet,Picture,,Color,V_Fw,I_Fw,I_Max,,,,,,Manufacturer,Manufacturer Part,Digi-Key Part,Newark Part,Mouser Part,,Cost
 part,LED_Red_0603,1,D?,LED,603,Red SMD LED 0603,,DIO LED,,,,Red,1.8V,2mA,25mA,,,,,,Osram Opto Semiconductor,LS L29K-G1J2-1-0-2-R18-Z,475-2506-1-ND,,,,0.15
 part,LED_Green_0603,1,D?,LED,603,Green SMD LED 0603,,Power LED,,,,Green,1.7V,2mA,25mA,,,,,,Osram Opto Semiconductor,LG L29K-G2J1-24-Z,475-2709-1-ND,,,,0.16
 
-library,gen_uC_Picaxe,,,,,,,,,
-header,Name,PPP,Ref,Symbol,Package,Description,,Usage,Datasheet,Picture
-part,PICAXE-08,1,U?,PICAXE-08,,,,,,
-part,PICAXE-08M,1,U?,PICAXE-08M,,,,,,
-part,PICAXE-14M,1,U?,PICAXE-14M,,,,,,
-part,PICAXE-18,1,U?,PICAXE-18,,,,,,
-part,PICAXE-18A,1,U?,PICAXE-18A,,,,,,
-part,PICAXE-28A,1,U?,PICAXE-28A,,,,,,
-part,PICAXE-28X,1,U?,PICAXE-28X,,,,,,
-part,PICAXE-28X1,1,U?,PICAXE-28X1,,,,,,
-part,PICAXE-28X2,1,U?,PICAXE-28X2,,,,,,
+library,gen_uC_Picaxe,,,,,,,,,,,,,,,,,,,,,,,,,,
+header,Name,PPP,Ref,Symbol,Package,Description,,Usage,Datasheet,Picture,,,,,,,,,,,,,,,,,
+part,PICAXE-08,1,U?,PICAXE-08,,,,,,,,,,,,,,,,,,,,,,,
+part,PICAXE-08M,1,U?,PICAXE-08M,,,,,,,,,,,,,,,,,,,,,,,
+part,PICAXE-14M,1,U?,PICAXE-14M,,,,,,,,,,,,,,,,,,,,,,,
+part,PICAXE-18,1,U?,PICAXE-18,,,,,,,,,,,,,,,,,,,,,,,
+part,PICAXE-18A,1,U?,PICAXE-18A,,,,,,,,,,,,,,,,,,,,,,,
+part,PICAXE-28A,1,U?,PICAXE-28A,,,,,,,,,,,,,,,,,,,,,,,
+part,PICAXE-28X,1,U?,PICAXE-28X,,,,,,,,,,,,,,,,,,,,,,,
+part,PICAXE-28X1,1,U?,PICAXE-28X1,,,,,,,,,,,,,,,,,,,,,,,
+part,PICAXE-28X2,1,U?,PICAXE-28X2,,,,,,,,,,,,,,,,,,,,,,,
 
 
 
@@ -432,223 +466,3 @@ part,PICAXE-28X2,1,U?,PICAXE-28X2,,,,,,
 
 
 end
-
-gen_IC
-OP_AMP
-COMPARATOR
-VREG_3_TERM
-VREG_3_TERM_ADJ
-TIMER_555
-
-
-
-
-
-gen_Display
-7_SEG
-LCD,,,
-BARGRAPH,,,
-METER,,,
-
-
-gen_Connectors,,,
-MOD_2_MALE,,,
-MOD_2_FEMALE,,,Modular 2 position male connector
-TERM,,,Modular 2 position female connector
-POST,,,Terminal block connector
-POWER_AC,,,Binding Post/Banana Post
-POWER_DC_SWITCHED,,,
-POWER_DC,,,
-
-gen_Mechanical,,,
-HEATSINK,,,
-STANDOFF
-ENCLOSURE
-BOARD_PCB
-BOARD
-MOUNT
-SCREW
-NUT
-WASHER
-PANEL
-PIN_MALE
-PIN_FEMALE
-
-
-gen_Logic
-AND_2
-NAND_2
-OR_2
-NOR_2
-AND_3
-AND_4
-AND_8
-NAND_3
-NAND_3
-NAND_8
-OR_3
-OR_4
-OR_8
-NOR_3
-NOR_4
-NOR_8
-XOR
-XNOR
-NOT,,,
-BUFFER,,,
-DELAY,,,
-LATCH_SR,,,
-LATCH_JK,,,
-FF_D,,,
-FF_D_EN,,,
-FF_D_CLR_ASYNC,,,
-FF_D_CLR_SYNC,,,D Flip-flop with asynchronous clear
-FF_D_PS,,,D Flip-flop with synchronous clear
-DEC_3_8,,,D Flip-flop with preset
-DEC_2_4,,,3-to-8 line decoder
-DEC_1_2,,,2-to-4 line decoder
-MUX_,,,1-to-2 line decoder
-
-
-
-
-
-part,P_MOSFET_DEP,1,FET?,,,Depletion mode P-channel MOSFET,,,,,,,,,,,,,,,,,,,
-
-
-
-library,th_Semiconductors,,,,,,,,,,,,,,,,,,,,,,,,
-part,4N25,1,U?,OPTO_ISO,6DIP300,4N25,General purpose opto-isolator,,,,,,,,,,,,,Fairchild Semiconductor,4N25M,4N25MFS-ND,,,0.52
-part,BR,1,D?,BR,,Bridge Rectifier,,,,,,,,,,,,,,,,,,,
-part,D1N4004,1,D?,D,DO-41,Rectifier Diode,General rectifying,,,,,400,1,,,,,,,Vishay/General,1N4004-E3/73,1N4004-E3/73GI-ND,,,0.05
-part,D1N5400,1,D?,D,DO-41,High-Current Rectifier Diode,High-current rectifying,,,,,50,3,,,,,,,Radio Shack,276-1141,1N5400GOS-ND,,,0.44
-part,D1N4729,1,D?,D,,3.6V Zener Diode,USB level shifting,,,3.6V,1,,,5,,,,,,Diodes Inc,1N4729A-T,1N4729ADICT-ND,,,
-part,D,1,D?,D,,Generic Small Zener Diode,,,,,,,,,,,,,,,,,,,
-part,D,1,D?,D,,Generic Small Diode,,,,,,,,,,,,,,,,,,,
-part,D,1,D?,D,,Generic Large Zener Diode,,,,,,,,,,,,,,,,,,,
-part,D,1,D?,D,,Generic Large Diode,,,,,,,,,,,,,,,,,,,
-part,FET_N,1,F?,FET_N,,N Channel MOSFET,,,,,,,,,,,,,,,,,,,
-part,FET_P,1,F?,FET_P,,P Channel MOSFET,,,,,,,,,,,,,,,,,,,
-part,LED,1,D?,LED,LEDT-1.75,Generic Large Radial LED,,,,,,,,,,,,,,,,,,,
-part,LED,1,D?,LED,LED-T1,Generic Small Radial LED,,,,,,,,,,,,,,,,,,,
-part,LED_Red_Green,1,D?,LED_BICOLOR,LED-T.175,Bicolor LED (Green/Red),,,,,,2.0 (red) /2.1 (green),0.03,,,,,,,Radio Shack,276-012,,,,1.49
-part,LED_Green,1,D?,LED,LED-T1,Small Green Radial LED,,,,,,,,,,,,,,Osram Opto Semiconductors,LG 3369-EJ-1-0-2-BULK-N,475-1402-ND,,,0.07
-part,LED_Red,1,D?,LED,LED-T1,Small Red Radial LED,,,,,,,,,,,,,,Osram Opto Semiconductors,LH 3344-Q1T2-1-0-10-BULK,475-1415-ND,,,0.13
-part,LED_Orange,1,D?,LED,LED-T1,Small Orange Radial LED,,,,,,,,,,,,,,Osram Opto Semiconductors,LO 3360-JM-24-0-10-BULK-,475-1416-ND,,,0.07
-part,LED_PM_Green,1,D?,LED,,Panel Mount Green LED (12V),,,,,,12,0.02,,,,,,,Radio Shack,276-271  ,,,,1.99
-part,LED_PM_Yellow,1,D?,LED,,Panel Mount Yellow LED (12V),,,,,,12,0.02,,,,,,,Radio Shack,276-272,,,,1.99
-part,PHOTO_TRAN,1,D?,PHOTO_TRAN,,Photo-transistor,,,,,,,,,,,,,,,,,,,
-part,Q,1,Q?,PNP,,Generic PNP TO-3 Transistor,,,,,,,,,,,,,,,,,,,
-part,Q,1,Q?,NPN,,Generic NPN TO-3 Transistor,,,,,,,,,,,,,,,,,,,
-part,Q,1,Q?,PNP,,Generic PNP TO-92 Transistor,,,,,,,,,,,,,,,,,,,
-part,Q,1,Q?,NPN,,Generic NPN TO-92 Transistor,,,,,,,,,,,,,,,,,,,
-part,Q,1,Q?,PNP,,Generic PNP TO-220 Transistor,,,,,,,,,,,,,,,,,,,
-part,Q,1,Q?,NPN,,Generic NPN TO-220 Transistor,,,,,,,,,,,,,,,,,,,
-part,Q_TIP120,1,Q?,NPN,TO-220,NPN Darlington Transistor Array (IB/IC=250),Power switching,,,,2,60,5,,,,,,,Fairchild Semiconductor,TIP120,TIP120-ND,,,0.56
-part,Q_TIP125,1,Q?,PNP,TO-220,PNP Darlington Transistor Array,Power switching,,,,2,60,5,,,,,,,Fairchild Semiconductor,TIP125TU,TIP125TU-ND,,,0.58
-part,Q_2N2222,1,Q?,NPN,TO-92,NPN Transistor,General switching,,,,0.63,40,0.6,,,,,,,ON Semiconductor,P2N2222AG,P2N2222AGOS-ND,,,0.36
-part,Q_2N3055G,1,Q?,NPN,TO-3,NPN Power Transistor,Power amplifier power supplies,,,,115,60,15,,,,,,,STMIcroelectronics,2N3055,497-2612-5-ND,,,1.68
-part,Q_2N3906,1,Q?,PNP,TO-92,PNP Transistor,General switching,,,,0.63,40,0.2,,,,,,,Fairchild Semiconductor,2N3906TFR,2N3906D26ZCT-ND,,,0.17
-part,Q_2N3904,1,Q?,NPN,TO-92,NPN Transistor,General switching,,,,0.63,40,0.2,,,,,,,Fairchild Semiconductor,2N3904TFR,2N3904D26ZCT-ND,,,0.19
-part,Q_2N4403,1,Q?,NPN,TO-92,NPN Transistor,General switching,,,,0.63,40,0.6,,,,,,,Fairchild Semiconductor,2N4403BU,2N4403-ND,,,0.13
-part,Q_2N4401,1,Q?,PNP,TO-92,PNP Transistor,General switching,,,,0.63,40,0.6,,,,,,,Fairchild Semiconductor,2N4401BU,2N4401-ND,,,0.12
-
-library,th_Vreg,,,,,,,,,,,,,,,,,,,,,,,,
-part,Lt 1370,1,U?,Lt 1370,TO-220-7,12V Switching regulator,Switching regulator,,,,12,,6,,,,,,,Linear Technologies,LT1370CT7,LT1370CT7#PBF-ND,,,11.88
-part,LM7805,1,U?,LM7800,TO-220,+5V 1A Fixed Voltage Regulator,,,,5V,,,1,4,,,,,,Fairchild Semiconductor,LM7805CT,LM7805CT-ND,,,0.47
-part,LM78xx,1,U?,LM7800,TO-220,xxV 1A Fixed Voltage Regulator,,,,,,,,,,,,,,,,,,,
-part,LM317,1,U?,LM317,TO-220,Variable Voltage Regulator 1.5A,,,,1.25V-37V,,,1.5,,,,,,,Fairchild Semiconductor,LM317T,LM317TFS-ND,,,0.48
-part,LM317,1,U?,LM317,TO-92,Variable Voltage Regulator 100mA,,,,1.25V-37V,,,0.1,,,,,,,Fairchild Semiconductor,LM317/NOPB,LM317LZNS-ND,,,0.84
-
-library,th_Transceivers,,,,,,,,,,,,,,,,,,,,,,,,
-part,MAX232,1,U?,MAX232,16DIP300,Dual Full-Duplex RS232 Transceiver,,,,,,,,,,,,,,Texas Instruments,MAX232N,296-1402-5-ND,,,0.9
-
-library,th_Comparators,,,,,,,,,,,,,,,,,,,,,,,,
-part,LM339,1,U?,LM339,14DIP300,Quad Comparator,,,,,,,,,,,,,,Fairchild Semiconductor,LM339N,LM339NFS-ND,,,0.47
-
-library,th_OpAmps,,,,,,,,,,,,,,,,,,,,,,,,
-part,LM324,1,U?,LM324,14DIP300,Uni/Bipolar  Op-Amp,,,,,,,,,,,,,,Fairchild Semiconductor,LM324N,LM324NFS-ND,,,0.4
-
-library,th_uC,,,,,,,,,,,,,,,,,,,,,,,,
-part,ATTiny2313,1,U?,ATTiny2313,20DIP300,AVR MCU 4K 20MHz,,,,,,,,,,,,,,Atmel,ATTINY2313-20PU,ATTINY2313-20PU-ND,,,2.26
-part,ATTiny45,1,U?,ATTinyX5,8DIP300,AVR MCU 2K,,,,,,,,,,,,,,Atmel,ATTINY45-20PU,ATTINY45-20PU-ND,,,2.13
-
-library,sm_IC_Transceivers,,,,,,,,,,,,,,,,,,,,,,,,
-part,FT232RL,1,U?,FT232RL,SSOP-28-2,1 Channel RS232->USB,,,,,,,,,,,,,,FTDI,FT232RL,604-00043-ND,,,4.02
-
-library,Connectors,,,,,,,,,,,,,,,,,,,,,,,,
-part,DB9F-90,1,K?,DB9X90,DB9F-90,9 Pin Female D-Sub Right-Angle,RS232 connector,,,,,,,,,,,,,Tyco Electronics AMP,1734354-1,A35107-ND,,,1.76
-part,DB9M-90,1,K?,DB9X90,DB9M-90,9 Pin Male D-Sub Right-Angle,RS232 connector,,,,,,,,,,,,,Tyco Electronics AMP,1734351-1,A35105-ND,,,1
-part,DC_JACK_PJ102AH,1,K?,PJ102AH,PJ102A,DC Power Jack 2.1x5.5mm High Current,,,,,,,,,,,,,,CUI Inc,PJ-102AH,CP-102AH-ND,,,0.42
-part,DC_JACK_PM,1,K?,PJ102AH,,Dc Power Jack 2.1x5.5mm Panel Mount w/Switch Coaxial Size M,,,,,,,,,,,,,,Radio Shack,274-1582,,,,2.99
-part,POST,1,K?,POST,HOLE_125_RND_250,Post for banana plugs,,,,,,,,,,,,,,,,,,,
-part,POST_PM,1,K?,POST,,Panel mount banana plug post,,,,,,,,,,,,,,,,,,,
-part,POST_PM,1,K?,POST,,Panel mount banana plug post,,,,,,,,,,,,,,Radio Shack,274-661  ,,,,1
-part,USBB,1,K?,USBB,USBB_2,USB B Type Receptacle,,,,,,,,,,,,,,FCI,61729-0010BLF,609-1039-ND,,,1.04
-part,STB_3_S,1,K?,STB_3,,.1 pitch 3 position screw-terminal block,,,,,,,,,,,,,,Tyco Electronics AMP,282834-3,A98334-ND,,,
-part,STB_2_S,1,K?,STB_2,,.1 pitch 2 position screw-terminal block,,,,,,,,,,,,,,Tyco Electronics AMP,282834-2,A98333-ND,,,
-part,STB_3_M,1,K?,STB_3,,.15 pitch 3 position screw-terminal block,,,,,,,,,,,,,,,,,,,
-part,STB_2_M,1,K?,STB_2,,.15 pitch 2 position screw-terminal block,,,,,,,,,,,,,,,,,,,
-part,STB_3_L,1,K?,STB_3,,.2 pitch 3 position screw-terminal block,,,,,,,,,,,,,,Molex,395443003,WM7854-ND,,,1.98
-part,STB_2_L,1,K?,STB_2,,.2 pitch 2 position screw-terminal block,,,,,,,,,,,,,,Molex,395443002,WM7853-ND,,,1.32
-part,MF_2_RECEP_MALE,1,K?,MF_2_MALE,,Molex Micro-Fit 2-position power connector male cable receptacle,,,,,,,,,,,,,,Molex,430250200,WM1783-ND,,,0.48
-part,MF_2_PCB_FEMALE,1,K?,MF_2_FEMALE,,Molex Micro-Fit 2-position power connector female PCB housing,,,,,,,,,,,,,,Molex,430450200,WM1813-ND,,,1.27
-part,MF_2_HOUSE_FEMALE,1,K?,MF_2_FEMALE,,Molex Micro-Fit 2-position power connector female cable housing,,,,,,,,,,,,,,Molex,430200200,WM1777-ND,,,0.48
-
-
-
-library,Electromechanical,,,,,,,,,,,,,,,,,,,,,,,,
-part,BUZZER,1,B?,BUZZER,,Buzzer,,,,,,,,,,,,,,,,,,,
-part,BUTTON,1,SW?,SPST_SW,TACTBUTT,Tactile Momentary Switch 6mm 160GF,,,,,,,,,,,,,,E-Switch,TL1105F160Q,EG1827-ND,,,0.23
-part,BUTTON_PM_SPST,1,SW?,SPST_SW,,Momentary panel-mount SPST switch,,,,,,125VAC,0.5,,,,,,,Radio Shack,275-1547,,,,3.49
-part,FUSE,1,F?,FUSE,,Fuse,,,,,,,,,,,,,,,,,,,
-part,MOTOR_1PHASE,1,M?,MOTOR_1,,Brushed DC motor,,,,,,,,,,,,,,,,,,,
-part,MOTOR_3PHASE,1,M?,MOTOR_3,,Brushless DC motor,,,,,,,,,,,,,,,,,,,
-part,SPDTSW,1,SW?,SPDT_SW,SPDTSW_2,SPDT 2pos Mini Slide Switch,,,,,,,,,,,,,,,,450-1602-ND,,,1.8
-part,SPDT_ROCKER_SW,1,SW?,SPDT_SW,,SPDT Heavy Duty Rocker Switch,,,,,,125VAC,6,,,,,,,Radio Shack,276-272,,,,3.99
-part,SPEAKER,1,SP?,SPEAKER,,,,,,,,,,,,,,,,,,,,,
-
-library,headers,,,,,,,,,,,,,,,,,,,,,,,,
-part,ATMEL_ISP,1,H?,,,,,,,,,,,,,,,,,,,,,,
-part,TP,1,TP?,TP,TP-2S-L,Through-hole low-profile compact test point,,,,,,,,,,,,,,Keystone Inc,5006,5006K-ND,,,0.32
-part,TP,1,TP?,TP,TP-2S-L,Through-hole high-profile multipurpose test point,,,,,,,,,,,,,,Keystone Inc,5011,5011K-ND,,,0.32
-part,JUMPER,1,H?,HDR_2,1X2HDR-100,Single-position through-hole jumper,,,,,,,,,,,,,,,,,,,
-part,2x1_HDR,2,H?,HDR_1,1X2HDR-100,2x1 .1 in pitch through-hole header (male or female),,,,,,,,,,,,,,,,,,,
-part,3x1_HDR,3,H?,HDR_1,3SIP100,3x1 .1 in pitch through-hole header (male or female),,,,,,,,,,,,,,,,,,,
-part,4x1_HDR,4,H?,HDR_1,4SIP100,4x1 .1 in pitch through-hole header (male or female),,,,,,,,,,,,,,,,,,,
-part,5x1_HDR,5,H?,HDR_1,5SIP100,5x1 .1 in pitch through-hole header (male or female),,,,,,,,,,,,,,,,,,,
-part,6x1_HDR,6,H?,HDR_1,6SIP100,6x1 .1 in pitch through-hole header (male or female),,,,,,,,,,,,,,,,,,,
-part,7x1_HDR,7,H?,HDR_1,7SIP100,7x1 .1 in pitch through-hole header (male or female),,,,,,,,,,,,,,,,,,,
-part,8x1_HDR,8,H?,HDR_1,8SIP100,8x1 .1 in pitch through-hole header (male or female),,,,,,,,,,,,,,,,,,,
-part,9x1_HDR,9,H?,HDR_1,9SIP100,9x1 .1 in pitch through-hole header (male or female),,,,,,,,,,,,,,,,,,,
-part,10x1_HDR,10,H?,HDR_1,10SIP100,10x1 .1 in pitch through-hole header (male or female),,,,,,,,,,,,,,,,,,,
-part,22x1_HDR,22,H?,HDR_1,22SIP100,22x1 .1 in pitch through-hole header (male or female)
-part,24x1_HDR,24,H?,HDR_1,24SIP100,22x1 .1 in pitch header through-hole (male or female)
-part,1x2_HDR,1,H?,HDR_2,1X2HDR-100,1x2 .1 in pitch through-hole header (male or female)
-part,2x2_HDR,2,H?,HDR_2,2X2HDR-100,2x2 .1 in pitch through-hole header (male or female)
-part,3x2_HDR,3,H?,HDR_2,3X2HDR-100,3x2 .1 in pitch through-hole header (male or female)
-part,4x2_HDR,4,H?,HDR_2,4X2HDR-100,4x2 .1 in pitch through-hole header (male or female)
-part,5x2_HDR,5,H?,HDR_2,5X2HDR-100,5x2 .1 in pitch through-hole header (male or female)
-part,6x2_HDR,6,H?,HDR_2,6X2HDR-100,6x2 .1 in pitch through-hole header (male or female)
-part,7x2_HDR,7,H?,HDR_2,7X2HDR-100,7x2 .1 in pitch through-hole header (male or female)
-part,8x2_HDR,8,H?,HDR_2,8X2HDR-100,8x2 .1 in pitch through-hole header (male or female)
-part,9x2_HDR,9,H?,HDR_2,9X2HDR-100,9x2 .1 in pitch through-hole header (male or female)
-part,10x2_HDR,10,H?,HDR_2,10X2HDR-100,10x2 .1 in pitch through-hole header (male or female)
-part,11x2_HDR,11,H?,HDR_2,11X2HDR-100,11x2 .1 in pitch through-hole header (male or female)
-part,12x2_HDR,12,H?,HDR_2,12X2HDR-100,12x2 .1 in pitch through-hole header (male or female)
-part,13x2_HDR,13,H?,HDR_2,13X2HDR-100,13x2 .1 in pitch through-hole header (male or female)
-part,14x2_HDR,14,H?,HDR_2,14X2HDR-100,14x2 .1 in pitch through-hole header (male or female)
-part,15x2_HDR,15,H?,HDR_2,15X2HDR-100,15x2 .1 in pitch through-hole header (male or female)
-part,16x2_HDR,16,H?,HDR_2,16X2HDR-100,16x2 .1 in pitch through-hole header (male or female)
-part,17x2_HDR,17,H?,HDR_2,17X2HDR-100,17x2 .1 in pitch through-hole header (male or female)
-part,18x2_HDR,18,H?,HDR_2,18X2HDR-100,18x2 .1 in pitch through-hole header (male or female)
-part,19x2_HDR,19,H?,HDR_2,19X2HDR-100,19x2 .1 in pitch through-hole header (male or female)
-part,20x2_HDR,20,H?,HDR_2,20X2HDR-100,20x2 .1 in pitch through-hole header (male or female)
-part,21x2_HDR,21,H?,HDR_2,21X2HDR-100,21x2 .1 in pitch through-hole header (male or female)
-part,22x2_HDR,22,H?,HDR_2,22X2HDR-100,22x2 .1 in pitch through-hole header (male or female)
-part,23x2_HDR,23,H?,HDR_2,23X2HDR-100,23x2 .1 in pitch through-hole header (male or female)
-part,24x2_HDR,24,H?,HDR_2,24X2HDR-100,24x2 .1 in pitch through-hole header (male or female)
-part,25x2_HDR,25,H?,HDR_2,25X2HDR-100,25x2 .1 in pitch through-hole header (male or female)
-
-
-end,,,,,,
