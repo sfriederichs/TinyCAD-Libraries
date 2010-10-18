@@ -380,6 +380,8 @@ header,Name,PPP,Ref,Symbol,Package,Description,,Color,Forward Voltage,Color,Manu
 part,LED_RED_1206,1,D?,LED,1206,LED CHIPLED 645NM RED DIFF 1206,,Red,1.8V,Red,OSRAM Opto Semiconductors Inc,LH N974-KN-1-0-20-R18,475-1416-1-ND,1,0.11000
 header,Name,PPP,Ref,Symbol,Package,Description,,Color,Forward Voltage,Color,Manufacturer,Manufacturer Part Number,Digi-Key Part Number,Min Quantity,Price per min
 part,LED_GREEN_1206,1,D?,LED,1206,LED CHIPLED 570NM GREEN 1206 SMD,,Green,2.2V,Green,OSRAM Opto Semiconductors Inc,LG N971-KN-1-0-20-R18,475-1407-1-ND,1,0.06000
+header,Name,PPP,Ref,Symbol,Package,Description,,Manufacturer,Manufacturer Part Number,Digi-Key Part Number,Min Quantity,Price per min
+part,D_TVS_5V8,1,D?,BIVREG,DO-214AB,DIODE TVS 6.8V 1500W 5% BI SMD,,Littelfuse Inc,1.5SMC6.8CA,1.5SMC6.8CACT-ND,1,0.70000
 library,gen_uC_Picaxe,,,,,,,,,,,,,,
 header,Name,PPP,Ref,Symbol,Package,Description,,Usage,Datasheet,Picture,,,,,
 part,PICAXE-08,1,U?,PICAXE-08,,,,,,,,,,,
