@@ -48,11 +48,11 @@ pull:
 	$(GIT) checkout $(BRANCH)
 	$(GIT) pull $(REPO_URL)
 	
-commit: clean_incoming add_libs FORCE
+commit: add_libs FORCE
 	notepad commit
 	-$(GIT) commit -a -v -F $(COMMITFILE)
 
-clean_libs:
+clean_libs: FORCE
 	rm -f $(TCLIB_DIR)/*.*
 	
 FORCE:
