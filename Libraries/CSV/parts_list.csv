@@ -156,7 +156,7 @@ header,Name,PPP,Ref,Symbol,Package,Description,,Usage,Datasheet,Picture,Freq.,To
 part,X,1,X?,X,OSCILLATOR,Crystal Oscillator,,Crystal for USB-enabled uCs,,,12MHz,,,,,,,,,,Citizen America Corporation,HC49US12.000MABJ-UB,300-8492-ND,,,,0.54,
 part,X,1,X?,X,OSCILLATOR,Precision Crystal Oscillator,,Real-time clocks,,,32.768KHz,,,,,,,,,,ECS Inc,ECS-3X8X,X1123-ND,,,,0.3,
 header,Name,PPP,Ref,Symbol,Package,Description,,Capacitance,Tolerance,Voltage - Rated,Operating Temperature,Size / Dimension,Manufacturer,Manufacturer Part Number,Digi-Key Part Number,Min Quantity,Price per min,,,,,,,,,,,
-part,CAP_100nF,1,C?,C,CK05,CAP .10UF 25V CERAMIC +80/-20%,,0.1F,0.6,25V,-30C ~ 85C,"0.158"" L x 0.158"" W (4.00mm x 4.00mm)",Vishay/BC Components,K104Z15Y5VE5TH5,BC1154CT-ND,1,0.44,,,,,,,,,,,
+part,CAP_100nF,1,C?,C,CK05,CAP .10UF 25V CERAMIC +80/-20%,,0.1F,0.6,25V,-30C ~ 85C,0.158" L x 0.158" W (4.00mm x 4.00mm),Vishay/BC Components,K104Z15Y5VE5TH5,BC1154CT-ND,1,0.44,,,,,,,,,,,
 header,Name,PPP,Ref,Symbol,Package,Description,,Frequency,Frequency Tolerance,Load Capacitance,Operating Temperature,Type,Manufacturer,Manufacturer Part Number,Digi-Key Part Number,Min Quantity,Price per min,,,,,,,,,,,
 part,XTAL_32K768Hz,1,X?,X,XTAL_32k768,CRYSTAL 32.7680KHZ 6.0PF CYL,,32.768kHz,20ppm,6pF,-10C ~ 60C,-,Epson Toyocom Corporation,C-002RX 32.7680K-E:PBFREE,SER3205-ND,1,0.32,,,,,,,,,,
 header,Name,PPP,Ref,Symbol,Package,Description,,Inductance,Tolerance,Current,DC Resistance (DCR),Operating Temperature,Type,Manufacturer,Manufacturer Part Number,Digi-Key Part Number,Min Quantity,Price per min,,,,,,,,,
@@ -232,9 +232,9 @@ library,pm_Indicators,,,,,,,,,,,,,,,,,,,,,,,,,,
 header,Name,PPP,Ref,Symbol,Package,Description,,Usage,Datasheet,Picture,Vf,If,Brightness,Color,Mounting Hole,,,,,,Manufacturer,Manufacturer Part,Digi-Key Part,Newark Part,Mouser Part,,Cost
 part,LED_PM_Green_12V,1,D?,LED,,Panel Mount Green LED (12V),,,,,12,0.02,,Green,,,,,,,Radio Shack,276-271  ,,,,,1.99
 part,LED_PM_Yellow_12V,1,D?,LED,,Panel Mount Yellow LED (12V),,,,,12,0.02,,Yellow,,,,,,,Radio Shack,276-272,,,,,1.99
-part,LED_PM_Red_5V,1,D?,LED,,Panel Mount Red LED (5V),,,,,5,0.01,,Red,".25""",,,,,,CML Innovative Technologies,5102H1-5V,L10021-ND,,,,1.86
-part,LED_PM_Green_5V,1,D?,LED,,Panel Mount Green LED (5V),,,,,5,0.012,,Green,".25""",,,,,,CML Innovative Technologies,5102H5-5V,L10025-ND,,,,1.86
-part,LED_PM_Amber_5V,1,D?,LED,,Panel Mount Amber LED (5V),,,,,5,0.01,,Amber,".25""",,,,,,CML Innovative Technologies,5102H3-5V,L10023-ND,,,,1.86
+part,LED_PM_Red_5V,1,D?,LED,,Panel Mount Red LED (5V),,,,,5,0.01,,Red,.25",,,,,,CML Innovative Technologies,5102H1-5V,L10021-ND,,,,1.86
+part,LED_PM_Green_5V,1,D?,LED,,Panel Mount Green LED (5V),,,,,5,0.012,,Green,.25",,,,,,CML Innovative Technologies,5102H5-5V,L10025-ND,,,,1.86
+part,LED_PM_Amber_5V,1,D?,LED,,Panel Mount Amber LED (5V),,,,,5,0.01,,Amber,.25",,,,,,CML Innovative Technologies,5102H3-5V,L10023-ND,,,,1.86
 library,pm_Connectors,,,,,,,,,,,,,,,,,,,,,,,,,,
 header,Name,PPP,Ref,Symbol,Package,Description,,Usage,Datasheet,,,,,,,,,,,,Manufacturer,Manufacturer Part,Digi-Key Part,Newark Part,Mouser Part,,Cost
 part,DC_JACK_PM_SW_RS,1,K?,PJ102AH,,Dc Power Jack 2.1x5.5mm Panel Mount w/Switch Coaxial Size M,,,,,,,,,,,,,,,Radio Shack,274-1582,,,,,2.99
@@ -316,15 +316,15 @@ part,24x2_HDR,1,H?,,24X2HDR-100,24x2 .1 in pitch through-hole header (male or fe
 part,25x2_HDR,1,H?,,25X2HDR-100,25x2 .1 in pitch through-hole header (male or female),,,,,,,,,,,,,,,,,,,,,
 library,Mechanical,,,,,,,,,,,,,,,,,,,,,,,,,,
 header,Name,PPP,Ref,Symbol,Package,Description,,Usage,Datasheet,Picture,Length,Width,Height,Material,Color,,,,,,Manufacturer,Manufacturer Part,Digi-Key Part,Newark Part,Mouser Part,,Cost
-part,PROJECT_BOX_8_6_3,1,MECH?,ENCLOSURE,,"8""x6""x3"" Project Box",,,,,,,,,,,,,,,Radio Shack,270-1809,,,,,6.99
+part,PROJECT_BOX_8_6_3,1,MECH?,ENCLOSURE,,8"x6"x3" Project Box,,,,,,,,,,,,,,,Radio Shack,270-1809,,,,,6.99
 part,ENCLOSURE,1,MECH?,ENCLOSURE,,Custom or generic enclosure,,,,,,,,,,,,,,,,,,,,,
-part,ENCLOSURE_7.6_4.6_2.37,1,MECH?,ENCLOSURE,,"7.6"" X 4.6"" X 2.37"" Black plastic enclosure",,,,,"7.6""","4.6""","2.37""",Plastic,Black,,,,,,Bud Industries,CU-3284,377-1219-ND,,,,11.1
+part,ENCLOSURE_7.6_4.6_2.37,1,MECH?,ENCLOSURE,,7.6" X 4.6" X 2.37" Black plastic enclosure,,,,,7.6",4.6",2.37",Plastic,Black,,,,,,Bud Industries,CU-3284,377-1219-ND,,,,11.1
 part,ENCLOSURE_AWESOME,1,MECH?,ENCLOSURE,,,,,,,,,,,,,,,,,Bud Industries,PC-11645,377-1571-ND,,,,13.7
 part,STANDOFF,1,MECH?,STANDOFF,HOLE_125_RND_250,Generic standoff,,,,,,,,,,,,,,,,,,,,,
 part,METAL_STANDOFF,4,MECH?,STANDOFF,HOLE_125_RND_250,Metal standoffs w/screws - 11/16 in height,,,,,,,,,,,,,,,Radio Shack,276-195,,,,,1.79
-part,MF_STANDOFF_1/2_IN,1,MECH?,STANDOFF,HOLE_125_RND_250,"Hex standoff - .5"" between boards male/female 4-40 thread .25"" wide",,,,,,,,,,,,,,,Keystone Electronics,8401,8401K-ND,,,,0.596
-part,MF_STANDOFF_1_IN,1,MECH?,STANDOFF,HOLE_125_RND_250,"Hex standoff - 1"" between boards male/female 4-40 thread .25"" wide",,,,,,0.25,"1""",Nickel,,,,,,,Keystone Electronics,1947,1947K-ND,,,,1.06
-part,FF_STANDOFF_1/2_IN,1,MECH?,STANDOFF,HOLE_125_RND_250,"Female-female .5"" between board .25"" wide 4-40 thread aluminum standoff",,,,,,0.25,0.5,Aluminum,,,,,,,Keystone Electronics,2203,2203K-ND,,,,0.403
+part,MF_STANDOFF_1/2_IN,1,MECH?,STANDOFF,HOLE_125_RND_250,Hex standoff - .5" between boards male/female 4-40 thread .25" wide,,,,,,,,,,,,,,,Keystone Electronics,8401,8401K-ND,,,,0.596
+part,MF_STANDOFF_1_IN,1,MECH?,STANDOFF,HOLE_125_RND_250,Hex standoff - 1" between boards male/female 4-40 thread .25" wide,,,,,,0.25,1",Nickel,,,,,,,Keystone Electronics,1947,1947K-ND,,,,1.06
+part,FF_STANDOFF_1/2_IN,1,MECH?,STANDOFF,HOLE_125_RND_250,Female-female .5" between board .25" wide 4-40 thread aluminum standoff,,,,,,0.25,0.5,Aluminum,,,,,,,Keystone Electronics,2203,2203K-ND,,,,0.403
 part,INSULATED_STANDOFF,4,MECH?,STANDOFF,HOLE_125_RND_250,Insulated standoffs - 10mm height,,,,,,,,,,,,,,,Radio Shack,276-1381,,,,,2.99
 part,LED_MOUNT,2,MECH?,LED_MOUNT,..,T-1.75 Panel mount LED holder,,,,,,,,,,,,,,,Radio Shack,276-080,,,,,1.49
 part,MF_PIN_MALE,1,MECH?,PIN_MALE,..,Molex Micro-Fit power connector male pin,,,,,,,,,,,,,,,Molex,430310002,WM1127CT-ND,,,,0.13
@@ -341,11 +341,11 @@ part,PCB,1,MECH?,PCB,..,Custom printed circuit board,,,,,,,,,,,,,,,,,,,,,
 part,PANEL,1,MECH?,PANEL,..,Custom or generic front panel,,,,,,,,,,,,,,,,,,,,,
 part,HEATSINK_TO_220,1,MECH?,HEATSINK,..,TO-220 Heat sink,,,,,,,,,,,,,,,,,,,,,
 part,HEATSINK_TO_3,1,MECH?,HEATSINK,..,TO-3 Heat Sink,,,,,,,,,,,,,,,,,,,,,
-part,SCREW_4_40_1/4_IN,1,MECH?,SCREW,,"4-40 thread .25"" screw",,,,,,,,,,,,,,,,,,,,,
+part,SCREW_4_40_1/4_IN,1,MECH?,SCREW,,4-40 thread .25" screw,,,,,,,,,,,,,,,,,,,,,
 part,DIP_8_SOCKET,1,MECH?,DIP_8,,DIP Socket - 4 pin open frame,,,,,,,,,,,,,,,3M,4808-3000-CP,3M5461-ND,,,,0.21
-part,6x1_HDR,1,H?,HDR_6_1,,"6x1 .1 in pitch through-hole male header .266"" contact length",,,,,,,,,,,,,,,Molex,90120-0126,WM8076-ND,,,,0.62
-part,8x1_HDR,1,H?,HDR_8_1,,"8x1 .1 in pitch through-hole male header .266"" contact length",,,,,,,,,,,,,,,Molex,90120-0128,WM8078-ND,,,,0.82
-part,25x2_HDR,1,H?,HDR_25_2,,"25x2 .1 in pitch through-hole male header .266"" contact length",,,,,,,,,,,,,,,Molex,90131-0145,WM8135-ND,,,,5.34
+part,6x1_HDR,1,H?,HDR_6_1,,6x1 .1 in pitch through-hole male header .266" contact length,,,,,,,,,,,,,,,Molex,90120-0126,WM8076-ND,,,,0.62
+part,8x1_HDR,1,H?,HDR_8_1,,8x1 .1 in pitch through-hole male header .266" contact length,,,,,,,,,,,,,,,Molex,90120-0128,WM8078-ND,,,,0.82
+part,25x2_HDR,1,H?,HDR_25_2,,25x2 .1 in pitch through-hole male header .266" contact length,,,,,,,,,,,,,,,Molex,90131-0145,WM8135-ND,,,,5.34
 part,RUBBER_FEET_SQ,4,H?,Rubber_Feet,,Square tapered rubber feet with adhesive backing,,,,,0.81,0.81,0.3,Rubber,,,,,,,3M,SJ-5523 (BLACK),SJ5523-0-ND,,,,1.13
 part,HDR_50_MALE_BREAKAWAY,1,H?,BREAKAWAY_HDR,,,,,,,,,,,Black,,,,,,Sullivan Connector Solutions,PBC25DAAN,S2011E-25-ND,,,,2.4
 header,Name,PPP,Ref,Symbol,Package,Description,,Usage,Datasheet,Picture,,,,,,,,,,,,,,,,,
@@ -355,25 +355,31 @@ part,PIN_MALE_1POS,1,MECH?,PIN_MALE,NA,CONN PIN 22-26AWG TIN CRIMP,,-,Pin,Crimp,
 header,Name,PPP,Ref,Symbol,Package,Description,,Type,Pin or Socket,Contact Termination,Wire Gauge,Contact Finish,Manufacturer,Manufacturer Part Number,Digi-Key Part Number,Min Quantity,Price per min,,,,,,,,,,
 part,PIN_FEMALE_1POS,1,MECH?,PIN_FEMALE,NA,CONN SOCKET 22-26AWG TIN CRIMP,,-,Socket,Crimp,22-26 AWG,Tin,Tyco Electronics,87667-3,A3000-ND,10,0.287,,,,,,,,,,
 header,Name,PPP,Ref,Symbol,Package,Description,,Color,Number of Positions,Number of Rows,Row Spacing,Pitch,Contact Type,Contact Termination,Color,Manufacturer,Manufacturer Part Number,Digi-Key Part Number,Min Quantity,Price per min,,,,,,,
-part,HOUSING_1_POS,1,MECH?,HOUSING_1_POS,NA,CONN HOUSING 1POS .100 SINGLE,,Black,1,1,-,"0.100"" (2.54mm)",Female Socket,Crimp,Black,Tyco Electronics,7-87499-2,A26962-ND,1,0.35,,,,,,,
+part,HOUSING_1_POS,1,MECH?,HOUSING_1_POS,NA,CONN HOUSING 1POS .100 SINGLE,,Black,1,1,-,0.100" (2.54mm),Female Socket,Crimp,Black,Tyco Electronics,7-87499-2,A26962-ND,1,0.35,,,,,,,
 library,Assemblies,,,,,,,,,,,,,,,,,,,,,,,,,,
 header,Name,PPP,Ref,Symbol,Package,Description,,Usage,Datasheet,Picture,,,,,,,,,,,Manufacturer,Manufacturer Part,Digi-Key Part,Newark Part,Mouser Part,Sparkfun Part,Cost
 part,Arduino Mega,1,U?,ARDUINO_MEGA,ARDUINO_MEGA,A uC development board based on the ATMega1280 uC,,,,,,,,,,,,,,,Smart Projects,Arduino Mega,,,,DEV-09152,64.95
 part,Arduino MegaShield Kit,1,U?,PCB,,A shield for the Arduino mega that has prototyping space,,,,,,,,,,,,,,,Sparkfun,DEV-09346,,,,DEV-09346,17.95
 library,sm_Passives,,,,,,,,,,,,,,,,,,,,,,,,,,
 header,Name,PPP,Ref,Symbol,Package,Description,,Resistance In Ohms,Tolerance,Size / Dimension,Manufacturer,Manufacturer Part Number,Digi-Key Part Number,Min Quantity,Price per min,,,,,,,,,,,,
-part,R_1K6_1206,1,R?,R,1206,RES 1.6K OHM 1/4W 5% 1206 SMD,,1.60K,5%,"0.126"" L x 0.063"" W (3.20mm x 1.60mm)",Panasonic - ECG,ERJ-8GEYJ162V,P1.6KECT-ND,1,0.06,,,,,,,,,,,,
+part,R_1K6_1206,1,R?,R,1206,RES 1.6K OHM 1/4W 5% 1206 SMD,,1.60K,5%,0.126" L x 0.063" W (3.20mm x 1.60mm),Panasonic - ECG,ERJ-8GEYJ162V,P1.6KECT-ND,1,0.06,,,,,,,,,,,,
 header,Name,PPP,Ref,Symbol,Package,Description,,Resistance In Ohms,Tolerance,Size / Dimension,Manufacturer,Manufacturer Part Number,Digi-Key Part Number,Min Quantity,Price per min,,,,,,,,,,,,
-part,R_10K_0603,1,R?,R,603,RES 10K OHM .25W 5% 0603 SMD,,10.0K,5%,"0.063"" L x 0.033"" W (1.60mm x 0.85mm)",Vishay/Dale,CRCW060310K0JNEAHP,541-10KSACT-ND,10,0.188,,,,,,,,,,,,
+part,R_10K_0603,1,R?,R,603,RES 10K OHM .25W 5% 0603 SMD,,10.0K,5%,0.063" L x 0.033" W (1.60mm x 0.85mm),Vishay/Dale,CRCW060310K0JNEAHP,541-10KSACT-ND,10,0.188,,,,,,,,,,,,
 header,Name,PPP,Ref,Symbol,Package,Description,,Manufacturer,Manufacturer Part Number,Digi-Key Part Number,Min Quantity,Price per min,,,,,,,,,,,,,,,
 part,PTC_1A5_1206,1,R?,PTC,1206,POLYSWITCH 1.50A RESET FUSE SMD,,Tyco Electronics,NANOSMDC150F-2,NANOSMDC150FCT-ND,1,0.44,,,
 header,Name,PPP,Ref,Symbol,Package,Description,,Resistance In Ohms,Tolerance,Size / Dimension,Manufacturer,Manufacturer Part Number,Digi-Key Part Number,Min Quantity,Price per min
-part,R_10K_1206,1,R?,R,1206,RES 10K OHM 1/4W 5% 1206 SMD,,10.0K,5%,"0.126"" L x 0.063"" W (3.20mm x 1.60mm)",Panasonic - ECG,ERJ-8GEYJ103V,P10KECT-ND,1,0.06
+part,R_10K_1206,1,R?,R,1206,RES 10K OHM 1/4W 5% 1206 SMD,,10.0K,5%,0.126" L x 0.063" W (3.20mm x 1.60mm),Panasonic - ECG,ERJ-8GEYJ103V,P10KECT-ND,1,0.06
+header,Name,PPP,Ref,Symbol,Package,Description,,Resistance In Ohms,Tolerance,Size / Dimension,Manufacturer,Manufacturer Part Number,Digi-Key Part Number,Min Quantity,Price per min
+part,R_140_1206,1,R?,R,1206,RES 140 OHM 1/4W 1% 1206 SMD,,140,1%,0.126" L x 0.063" W (3.20mm x 1.60mm),Panasonic - ECG,ERJ-8ENF1400V,P140FCT-ND,1,0.10000
 library,sm_Semiconductors,,,,,,,,,,,,,,
 header,Name,PPP,Ref,Symbol,Package,Description,,Color,Forward Voltage,Color,Manufacturer,Manufacturer Part Number,Digi-Key Part Number,Min Quantity,Price per min
 part,LED_RED_0603,1,D?,LED,603,LED SMARTLED 630NM RED 0603 SMD,,Red,1.8V,Red,OSRAM Opto Semiconductors Inc,LS L29K-G1J2-1-0-2-R18-Z,475-2506-1-ND,1,0.15
 header,Name,PPP,Ref,Symbol,Package,Description,,Color,Forward Voltage,Color,Manufacturer,Manufacturer Part Number,Digi-Key Part Number,Min Quantity,Price per min
 part,LED_GREEN_0603,1,D?,LED,603,LED SMARTLED GREEN 570NM 0603,,Green,1.7V,Green,OSRAM Opto Semiconductors Inc,LG L29K-G2J1-24-Z,475-2709-1-ND,1,0.16
+header,Name,PPP,Ref,Symbol,Package,Description,,Color,Forward Voltage,Color,Manufacturer,Manufacturer Part Number,Digi-Key Part Number,Min Quantity,Price per min
+part,LED_RED_1206,1,D?,LED,1206,LED CHIPLED 645NM RED DIFF 1206,,Red,1.8V,Red,OSRAM Opto Semiconductors Inc,LH N974-KN-1-0-20-R18,475-1416-1-ND,1,0.11000
+header,Name,PPP,Ref,Symbol,Package,Description,,Color,Forward Voltage,Color,Manufacturer,Manufacturer Part Number,Digi-Key Part Number,Min Quantity,Price per min
+part,LED_GREEN_1206,1,D?,LED,1206,LED CHIPLED 570NM GREEN 1206 SMD,,Green,2.2V,Green,OSRAM Opto Semiconductors Inc,LG N971-KN-1-0-20-R18,475-1407-1-ND,1,0.06000
 library,gen_uC_Picaxe,,,,,,,,,,,,,,
 header,Name,PPP,Ref,Symbol,Package,Description,,Usage,Datasheet,Picture,,,,,
 part,PICAXE-08,1,U?,PICAXE-08,,,,,,,,,,,

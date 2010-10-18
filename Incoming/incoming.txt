@@ -1,3 +1,0 @@
-DK,475-1416-1-ND,LED_RED_1206,D?,LED,1206,sm_Semiconductors
-DK,475-1407-1-ND,LED_GREEN_1206,D?,LED,12-6,sm_Semiconductors
-
