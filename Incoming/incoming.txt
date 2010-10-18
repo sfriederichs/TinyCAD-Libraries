@@ -1,0 +1,1 @@
+DK,1.5SMC6.8CACT-ND,D_TVS_5V8,D?,BIVREG,DO-214AB,sm_Semiconductor
