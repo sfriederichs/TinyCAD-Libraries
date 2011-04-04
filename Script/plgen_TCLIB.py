@@ -391,7 +391,7 @@ def main(argv=None):
     #symbol_db.Close()
     dtbs.close()
     symbol_db.close()
-    
+    os.system('pause');
     return
 
 
@@ -401,7 +401,8 @@ if __name__=="__main__":
     except SystemExit:
         print "A fatal error ocurred"
 
-    
+
+	
         
 
         
