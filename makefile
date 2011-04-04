@@ -9,7 +9,7 @@ COMMITFILE = commit
 GIT = git
 BRANCH = master
 COMMITFILE = commit
-SSH_URL = git@github.com:$(USERNAME)/$(REPO)
+SSH_URL = ssh://git@github.com/$(USERNAME)/$(REPO)
 PL_URL = "http://spreadsheets.google.com/pub?key=t9k879BSXydtZdb6YKeC40g&output=csv"
 PYTHON_CMD = python
 PL_DIR = ./Libraries/CSV
