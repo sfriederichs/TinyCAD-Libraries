@@ -6,7 +6,8 @@
 #TODO - figure out how to keep the names from being visible in TinyCAD
 #TODO - check price outputs - not showing up correctly, always '1'
 
-import win32com, sys, string, pythoncom, win32com.client, csv, os.path,os,sqlite3
+#DONE - ha HA!  No more win32 crap!
+import sys, string, csv, os.path,os,sqlite3
 
 #testing
 project_path = "." + "\\Libraries"
@@ -41,8 +42,8 @@ desc_part = {0:'Markup',
              5:'Package',
              6:'Description'}
 
-const = win32com.client.constants
-daoEngine = win32com.client.Dispatch('DAO.DBEngine.36')
+#const = win32com.client.constants
+#daoEngine = win32com.client.Dispatch('DAO.DBEngine.36')
 fields = {}
 db_conn = None
 dtbs=None

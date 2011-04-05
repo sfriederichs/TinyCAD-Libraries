@@ -205,7 +205,7 @@ def main(argv=None):
             # print row
             try:
                 dk_pn = row[Argument_list['DKey_Part']]
-                dk_pn.replace('+','%2B')
+                dk_pn.replace('+',"\%2B")	#TODO This does not work
                 print 'Part number is ' + dk_pn
             except IndexError,msg:
                 continue
@@ -221,7 +221,7 @@ def main(argv=None):
             parser.close()
             
             part = parser.part_info.items()
-            #print part
+            print part
             
         CSV_row = 'part'
         CSV_header = 'header'
