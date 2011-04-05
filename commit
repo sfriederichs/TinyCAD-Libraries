@@ -1,4 +1,2 @@
-Added MAX6955 - both QFN and SSOP versions
-Also, removed Win32 libraries from the TCLIB script - they weren't necessary anymore
-There's one bug in the dkey script though - doesn't replace '+' with '%2B'
+Re-Added spice library that got inadvertantly deleted - I'll have to fix that.
 
