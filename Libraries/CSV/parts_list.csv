@@ -398,9 +398,14 @@ header,Name,PPP,Ref,Symbol,Package,Description,,Voltage - Supply,Operating Tempe
 part,RTC_DS1337,1,U?,DS1227_DIP,8DIP300,IC RTC SERIAL 2WIRE LP 8-DIP,,1.8 V ~ 5.5 V,-40C ~ 85C,Clock/Calendar/Alarm,IC 2-Wire Serial,Maxim Integrated Products,DS1337+,DS1337+-ND,1,2.73
 header,Name,PPP,Ref,Symbol,Package,Description,,Voltage - Supply,Manufacturer,Manufacturer Part Number,Digi-Key Part Number,Min Quantity,Price per min,,,
 part,ENCODER,1,U?,EVE-JBBF2020B,EVE-2JJB2020B,ENCODER ROTARY 12MM 20PPR W/SW,,-,Panasonic - ECG,EVE-JBBF2020B,P12336-ND,1,1.57,,,
+header,Name,PPP,Ref,Symbol,Package,Description,,Frequency,Voltage - Supply,Operating Temperature,Type,Manufacturer,Manufacturer Part Number,Digi-Key Part Number,Min Quantity,Price per min
+part,NE555_DIP,1,U?,NE555,8DIP300,IC OSC MONO TIMING 500KHZ 8DIP,,500kHz,4.5 V ~ 16 V,0C ~ 70C,555 Type Timer/Oscillator (Single),STMicroelectronics,NE555N,497-1963-5-ND,1,0.50000
 library,sm_IC_Drivers
 header,Name,PPP,Ref,Symbol,Package,Description,,Voltage - Supply,Operating Temperature,Interface,Manufacturer,Manufacturer Part Number,Digi-Key Part Number,Min Quantity,Price per min
 part,MAX_6955_SSOP,1,U?,MAX6955_SSOP,36-SSOP,IC DRIVER LED SEG 14/16 36-SSOP,,2.7 V ~ 5.5 V,-40C ~ 125C,IC,Maxim Integrated Products,MAX6955AAX+,MAX6955AAX+-ND,1,28.03000
 header,Name,PPP,Ref,Symbol,Package,Description,,Voltage - Supply,Operating Temperature,Interface,Manufacturer,Manufacturer Part Number,Digi-Key Part Number,Min Quantity,Price per min
 part,MAX_6955_QFN,1,U?,MAX6955_QFN,40-QFN,IC DRVR DSPL LED 40-TQFN,,2.7 V ~ 5.5 V,-40C ~ 125C,IC,Maxim Integrated Products,MAX6955ATL+,MAX6955ATL+-ND,1,28.03000
+library,sm_ICs
+header,Name,PPP,Ref,Symbol,Package,Description,,Frequency,Voltage - Supply,Operating Temperature,Type,Manufacturer,Manufacturer Part Number,Digi-Key Part Number,Min Quantity,Price per min
+part,NE555_SOIC,1,U?,NE555,8_SOIC,IC OSC MONO TIMING 500KHZ 8-SOP,,500kHz,4.5 V ~ 16 V,0C ~ 70C,555 Type Timer/Oscillator (Single),Texas Instruments,TLC555IP,296-1858-5-ND,1,0.45000
 end
