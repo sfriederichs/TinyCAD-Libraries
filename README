@@ -1,11 +1,7 @@
-Warrany info:  There is none.  I mad these for my own purposes and thought that
-others might like them as well.  They may not be right.  They probably aren't.  
-
 License Info:  Check out http://tinycad.sourceforge.net and the licensing info
 for the libraries there.  It's the same. I did a fair bit of the artwork but 
-not all of it.  If you want something removed, contact me.  I have no desire to
-infringe on any copyrights you can lay claim to - just tryin to help a few 
-people out. 
+not all of it.  If you want something removed because it violates a copyright, 
+contact me. 
 
 Background
 
@@ -14,6 +10,4 @@ schematic editor tool that can be found here: http://tinycad.sourceforge.net
 I prefer a TinyCAD/FreePCB combo for my schematic and PCB layout needs, so 
 these librares have parts with FreePCB footprints associated with them.  Some 
 footprints are not present in FreePCB - that's because I made them and haven't 
-had the time to add them to the Git repository yet!  I'm working on it.  
-Really.  I swear.  Ok not so much, but a little.  If I can just figure out how
-to use Git....
+had the time to add them to the Git repository yet.  
